@@ -1,30 +1,7 @@
 //I1TWSUX1   JOB    NOTIFY=&SYSUID,CLASS=S                              J0182789
-//*JOBPARM SYSAFF=WAP1                                                          
 //*                                                                             
-//   SET  SOURCE=TWSZWAP.EXIT                                                   
-//*  SET  SOURCE=IVSLO.EXIT                                                     
-//*  SET  OUTLIB=IVSLO.LINKLIB                                                  
-//*  SET  OUTLIB=TWSZWAD.LINKLIB                                                
-//*  SET  OUTLIB=TWSZWAM.LINKLIB                                                
-//   SET  OUTLIB=ZWAP.AUTHLIB.TWS                                               
-//*                                                                             
-//*  10/07/2017 assign user UDB2P for application MDB2#01CC*                    
-//*                                                                             
-//*  13/08/2013 add logic of selection of DB members to EQQUX001 to             
-//*  serve submition of tenth of jobs in a few seconds                          
-//*                                                                             
-//*  13/06/2013 usage of macro MTRWADAT MTRDBENT WA7REC07                       
-//*  06/12/2012 added MODJCLAF for ZMTRUS01 colaboration                        
-//*  18/05/2006 user YATWS for R* appls                                         
-//*  18/05/2006 user YATECH for U* appls                                        
-//*  01/12/2017 user UDBAUTO, UDB2AUTH, UDB2P                                   
-//*  10/08/2023 save DB2 weights after each refresh of weights                  
-//*    if all weights are decrease to 1 during mass JCL submittion              
-//*    then they are restored from saved copy                                   
-//* DBENTNM is added to MTRWADAT macro to is increased to 40, as half           
-//*    of allocated for DBLST storage is used for keeping saved copy.           
-//*   23/08/23  SET_RUSE1 version for ZWAP                                      
-//*                                                                             
+//   SET  SOURCE=hlq.EXIT                                                   
+//   SET  OUTLIB=hlq.LINKLIB                                               
 //*                                                                             
 //* ----------                                                                  
 //* PROCEDURES:                                                                 

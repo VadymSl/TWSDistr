@@ -1,20 +1,7 @@
 //I1TWSU00   JOB NOTIFY=&SYSUID,CLASS=S                                         
 //*                                                                             
-//   SET  SOURCE=TWSZWAP.EXIT                                                   
-//*  SET  SOURCE=IVSLO.EXIT                                                     
-//*  SET  OUTLIB=TWSZWAM.LINKLIB                                                
-//*  SET  OUTLIB=TWSZWAD.LINKLIB                                                
-//*  SET  OUTLIB=IVSLO.LINKLIB                                                  
-//   SET  OUTLIB=ZWAP.AUTHLIB.TWS                                               
-//*                                                                             
-//* 13/06/2013 usage of macro MTRWADAT MTRDBENT WA7REC07                        
-//* 25/11/2009 checking UX7 buffer for unprocessed records                      
-//* 25/09/2009 allocating  buffer for further use in SOZCOM01                   
-//* 26/11/2007 allocates memory for further use in EQQUX001                     
-//*    and ZMTRUS01 and assign it to MCAUSERF                                   
-//* 16/08/2023 DBENTNM definiton moved to MTRWADAT macro                        
-//*                                                                             
-//*                                                                             
+//   SET  SOURCE=hlq.EXIT                                                   
+//   SET  OUTLIB=hlq.LINKLIB                                               
 //*                                                                             
 //* ---------------------------------------------------------------             
 //*    This version of exit should be used:                                     
@@ -24,8 +11,6 @@
 //*   -with EQQUX007 exit and SOZCOM01 program for sending job                  
 //*    start/stop event                                                         
 //* ---------------------------------------------------------------             
-//*                                                                             
-//*                                                                             
 //*                                                                             
 //* Major PROCEDURES:                                                           
 //* ----------                                                                  
