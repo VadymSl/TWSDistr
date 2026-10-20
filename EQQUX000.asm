@@ -436,7 +436,7 @@ ACTION   EQU   PARMLST1,4,C'F'
 @WAUX7HD DSECT                                                                  
          WA7REC07              Control structure for EQQUX007 & SOZM            
                                                                                 
-WA7NUM   EQU   20000              num of recs for ZUX7CM01                      
+WA7NUM   EQU   200               num of recs for ZUX7CM01                      
 WA7RECL  EQU   128               length of rec for ZUX7CM01                     
 WALSTOFF EQU   8                  ofset of list of ZMTRUS1's buffer             
 * four byte before ZMTRUS buffer is also used by EQQUX001 as indicator          
